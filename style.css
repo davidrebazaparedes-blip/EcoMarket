@@ -712,3 +712,47 @@ header {
     font-size: 0.9rem;
     color: #666;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    .cart-container {
+        margin-left: 0;
+        margin-top: 10px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        right: -100%;
+    }
+}
