@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | EcoMarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo EcoMarket" class="logo-img">
+            <span class="logo-text">Eco<span>Market</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+            <div class="cart-container">
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-hero">
+        <div class="container">
+            <h1>Nuestra Historia</h1>
+            <p>En EcoMarket, creemos que la salud comienza en la tierra y termina en tu mesa.</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Comprometidos con lo Natural</h2>
+                <p>Nacimos en Chimbote con la idea de conectar a los productores locales con familias que buscan una alimentación libre de químicos y pesticidas.</p>
+                <p>Nuestra misión es fomentar un consumo responsable que respete los ciclos de la naturaleza y apoye el crecimiento de nuestra comunidad en Ancash.</p>
+
+                <div class="values">
+                    <span><i class="fas fa-leaf"></i> 100% Orgánico</span>
+                    <span><i class="fas fa-handshake"></i> Comercio Justo</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="img/local.jpg" alt="Nuestro huerto local en Chimbote">
+            </div>
+        </div>
+    </section>
+
+    <section class="pilares-section py-5">
+        <div class="container">
+            <div class="grid-pilares">
+                <div class="pilar-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Sostenibilidad</h3>
+                    <p>Reducimos el uso de plásticos y promovemos el compostaje local.</p>
+                </div>
+                <div class="pilar-card">
+                    <i class="fas fa-truck-harvest"></i>
+                    <h3>Frescura Diaria</h3>
+                    <p>Del campo a tu hogar en menos de 24 horas para mantener nutrientes.</p>
+                </div>
+                <div class="pilar-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Comunidad</h3>
+                    <p>Trabajamos directamente con agricultores de la zona de Santa y alrededores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <span class="logo-text">Eco<span>Market</span></span>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="index.html#donde">Dónde estamos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Sostenibilidad</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Canal Ético</a></li>
+                        <li><a href="#">Intranet</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-item"><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></div>
+            <div class="address-item">Chimbote, Ancash - Perú</div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<div id="carrito-sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h2>Tu Carrito</h2>
+        <button id="close-sidebar" class="btn-close">&times;</button>
+    </div>
+    <div id="carrito-items" class="sidebar-content">
+    </div>
+    <div class="sidebar-footer">
+        <div class="total-container">
+            <span>Total:</span>
+            <span id="carrito-total">S/ 0.00</span>
+        </div>
+        <button class="btn-checkout">Finalizar Compra</button>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+</body>
+</html>

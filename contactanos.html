@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactanos</title>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo EcoMarket" class="logo-img">
+            <span class="logo-text">Eco<span>Market</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+            <div class="cart-container">
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </ul>
+    </nav>
+</header>
+<section class="container contact-section">
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+                <button type="submit" class="btn-main">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Ubicación</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Chimbote, Ancash</p>
+            <p><i class="fas fa-phone"></i> +93679588</p>
+            <div class="map-placeholder">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63025.10170138541!2d-78.6111867!3d-9.0702846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab81451f2249cf%3A0x6334a1795f575638!2sChimbote!5e0!3m2!1ses-419!2spe!4v1714000000000!5m2!1ses-419!2spe"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <span class="logo-text">Eco<span>Market</span></span>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Dónde estamos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Sostenibilidad</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="lista-enlaces">
+                        <li><a href="#">Canal Ético</a></li>
+                        <li><a href="#">Intranet</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-item"><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a></div>
+            <div class="social-item"><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></div>
+            <div class="address-item">Chimbote, Ancash - Perú</div>
+        </div>
+    </div>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="script.js"></script>
+<div id="carrito-sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h2>Tu Carrito</h2>
+        <button id="close-sidebar" class="btn-close">&times;</button>
+    </div>
+    <div id="carrito-items" class="sidebar-content">
+    </div>
+    <div class="sidebar-footer">
+        <div class="total-container">
+            <span>Total:</span>
+            <span id="carrito-total">S/ 0.00</span>
+        </div>
+        <button class="btn-checkout">Finalizar Compra</button>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+</body>
+</html>
